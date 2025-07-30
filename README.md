@@ -1,4 +1,5 @@
 # First-Project
 This is my first repository
 <br>
-Author - Vedant Deshpande
+<h1>
+Author - Vedant Deshpande</h1>
