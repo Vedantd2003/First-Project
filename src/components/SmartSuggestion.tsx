@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCalendarStore } from '@/store/calendarStore';
-import { getDaysInRange, sortRangeDates } from '@/utils/calendar';
+import { getDaysInRange } from '@/utils/calendar';
 import { MonthTheme } from '@/types';
 
 interface SmartSuggestionProps {

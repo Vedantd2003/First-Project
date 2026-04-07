@@ -27,7 +27,6 @@ export default function NotesPanel({ theme }: NotesPanelProps) {
     deleteRangeNote,
     setNotesPanelOpen,
     selectDate,
-    setDateRange,
   } = useCalendarStore();
 
   const [newNote, setNewNote] = useState('');

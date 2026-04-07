@@ -12,7 +12,7 @@ interface RangeHighlighterProps {
 }
 
 export default function RangeHighlighter({ theme }: RangeHighlighterProps) {
-  const { dateRange, isSelectingRange, setIsSelectingRange, setDateRange, setNotesPanelOpen } =
+  const { dateRange, isSelectingRange, setIsSelectingRange, setDateRange } =
     useCalendarStore();
 
   const hasRange = dateRange.start && dateRange.end;
