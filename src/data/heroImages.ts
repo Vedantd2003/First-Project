@@ -1,18 +1,18 @@
 export const HERO_IMAGES: Record<number, { url: string; credit: string }> = {
   0: {
-    url: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1457269449834-928af64c684d?w=1200&q=80',
     credit: 'Winter landscape',
   },
   1: {
-    url: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1200&q=80',
-    credit: 'Spring blossoms',
+    url: 'https://images.unsplash.com/photo-1486496146582-9a557f5b1069?w=1200&q=80',
+    credit: 'Valentine roses',
   },
   2: {
-    url: 'https://images.unsplash.com/photo-1462275646964-a0e3c11f18a6?w=1200&q=80',
-    credit: 'March countryside',
+    url: 'https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=1200&q=80',
+    credit: 'Spring blossoms',
   },
   3: {
-    url: 'https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1462275646964-a0e3c11f18a6?w=1200&q=80',
     credit: 'April flowers',
   },
   4: {
@@ -24,15 +24,15 @@ export const HERO_IMAGES: Record<number, { url: string; credit: string }> = {
     credit: 'Summer beach',
   },
   6: {
-    url: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?w=1200&q=80',
     credit: 'July sunset',
   },
   7: {
-    url: 'https://images.unsplash.com/photo-1531722569936-825d3dd91b15?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=1200&q=80',
     credit: 'August golden hour',
   },
   8: {
-    url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=1200&q=80',
     credit: 'September autumn',
   },
   9: {
@@ -40,7 +40,7 @@ export const HERO_IMAGES: Record<number, { url: string; credit: string }> = {
     credit: 'October foliage',
   },
   10: {
-    url: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1510272839903-cdd137e59cf0?w=1200&q=80',
     credit: 'November harvest',
   },
   11: {

@@ -42,7 +42,7 @@ export default function HeroImage({ theme, month, year }: HeroImageProps) {
       <div
         className="absolute inset-0"
         style={{
-          background: `linear-gradient(to bottom, transparent 30%, ${theme.bg}ee 90%, ${theme.bg} 100%)`,
+          background: `linear-gradient(to bottom, transparent 50%, ${theme.bg}cc 85%, ${theme.bg} 100%)`,
         }}
       />
       <div
