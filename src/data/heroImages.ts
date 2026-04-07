@@ -4,15 +4,15 @@ export const HERO_IMAGES: Record<number, { url: string; credit: string }> = {
     credit: 'Winter landscape',
   },
   1: {
-    url: 'https://images.unsplash.com/photo-1486496146582-9a557f5b1069?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=1200&q=80',
     credit: 'Valentine roses',
   },
   2: {
-    url: 'https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1416339684178-3a239570f315?w=1200&q=80',
     credit: 'Spring blossoms',
   },
   3: {
-    url: 'https://images.unsplash.com/photo-1462275646964-a0e3c11f18a6?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=1200&q=80',
     credit: 'April flowers',
   },
   4: {
@@ -40,7 +40,7 @@ export const HERO_IMAGES: Record<number, { url: string; credit: string }> = {
     credit: 'October foliage',
   },
   10: {
-    url: 'https://images.unsplash.com/photo-1510272839903-cdd137e59cf0?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1200&q=80',
     credit: 'November harvest',
   },
   11: {
