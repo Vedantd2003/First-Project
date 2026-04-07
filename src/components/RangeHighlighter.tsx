@@ -46,7 +46,7 @@ export default function RangeHighlighter({ theme }: RangeHighlighterProps) {
             ? `linear-gradient(135deg, ${theme.primary}, ${theme.secondary})`
             : `${theme.primary}22`,
           color: isSelectingRange ? '#fff' : theme.primary,
-          border: `1px solid ${isSelectingRange ? 'transparent' : theme.primary}44`,
+          border: isSelectingRange ? '1px solid transparent' : `1px solid ${theme.primary}44`,
         }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

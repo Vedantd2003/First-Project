@@ -64,6 +64,7 @@ const DateCell = memo(function DateCell({ date, year, month, theme }: DateCellPr
       }
     } else {
       selectDate(dateKey);
+      setDateRange({ start: null, end: null });
       setNotesPanelOpen(true);
     }
   }, [inMonth, isSelectingRange, dateRange, dateKey, setDateRange, setIsSelectingRange, selectDate, setNotesPanelOpen]);
