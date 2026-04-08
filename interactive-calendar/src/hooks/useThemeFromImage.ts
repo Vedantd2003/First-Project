@@ -14,13 +14,13 @@ export interface ThemeColors {
 }
 
 const DEFAULT_THEME: ThemeColors = {
-  primary: 'rgb(99, 102, 241)',
+  primary: '#6366f1',
   primaryLight: 'rgba(99, 102, 241, 0.2)',
-  primaryDark: 'rgb(67, 56, 202)',
-  accent: 'rgb(236, 72, 153)',
+  primaryDark: '#4338ca',
+  accent: '#ec4899',
   accentLight: 'rgba(236, 72, 153, 0.2)',
   textOnPrimary: '#ffffff',
-  gradient: 'linear-gradient(135deg, rgb(99, 102, 241), rgb(236, 72, 153))',
+  gradient: 'linear-gradient(135deg, #6366f1, #ec4899)',
   glowColor: 'rgba(99, 102, 241, 0.4)',
   surfaceColor: 'rgba(255, 255, 255, 0.85)',
   surfaceColorDark: 'rgba(30, 30, 46, 0.9)',
@@ -35,7 +35,8 @@ const getLuminance = (r: number, g: number, b: number): number => {
   return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
 };
 
-const rgbToString = (r: number, g: number, b: number) => `rgb(${r}, ${g}, ${b})`;
+const toHex = (n: number) => Math.max(0, Math.min(255, n)).toString(16).padStart(2, '0');
+const rgbToHex = (r: number, g: number, b: number) => `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 const rgbaToString = (r: number, g: number, b: number, a: number) =>
   `rgba(${r}, ${g}, ${b}, ${a})`;
 
@@ -144,13 +145,13 @@ export const useThemeFromImage = (imageSrc: string | null): ThemeColors & { load
       const [dr, dg, db] = darkenColor(pr, pg, pb, 0.3);
 
       setTheme({
-        primary: rgbToString(pr, pg, pb),
+        primary: rgbToHex(pr, pg, pb),
         primaryLight: rgbaToString(pr, pg, pb, 0.2),
-        primaryDark: rgbToString(dr, dg, db),
-        accent: rgbToString(ar, ag, ab),
+        primaryDark: rgbToHex(dr, dg, db),
+        accent: rgbToHex(ar, ag, ab),
         accentLight: rgbaToString(ar, ag, ab, 0.2),
         textOnPrimary: textColor,
-        gradient: `linear-gradient(135deg, ${rgbToString(pr, pg, pb)}, ${rgbToString(ar, ag, ab)})`,
+        gradient: `linear-gradient(135deg, ${rgbToHex(pr, pg, pb)}, ${rgbToHex(ar, ag, ab)})`,
         glowColor: rgbaToString(pr, pg, pb, 0.4),
         surfaceColor: `rgba(255, 255, 255, 0.85)`,
         surfaceColorDark: `rgba(30, 30, 46, 0.9)`,

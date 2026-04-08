@@ -204,6 +204,7 @@ const DayCell: React.FC<DayCellProps> = React.memo(
     prev.isInRange === next.isInRange &&
     prev.isHoverPreview === next.isHoverPreview &&
     prev.hasNote === next.hasNote &&
+    prev.notePreview === next.notePreview &&
     prev.themeColor === next.themeColor &&
     prev.isDark === next.isDark &&
     prev.holiday === next.holiday

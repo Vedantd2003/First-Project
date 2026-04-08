@@ -48,6 +48,7 @@ const CalendarContainer: React.FC = () => {
     handleDateClick,
     clearSelection,
     setSelectionMode,
+    setIsDragging,
   } = useDateRange();
 
   // Notes management
@@ -137,16 +138,18 @@ const CalendarContainer: React.FC = () => {
     };
   }, [isDragging]);
 
-  // Handle global mouseup for drag mode
+  // Handle global mouseup for drag mode — just stop dragging, keep the range
   useEffect(() => {
-    const handleMouseUp = () => {
-      if (isDragging && startDate) {
-        handleDateMouseUp(startDate);
+    const handleGlobalMouseUp = () => {
+      if (isDragging) {
+        // Stop dragging without clearing the endDate that was already set
+        // by handleDateMouseEnter during the drag
+        setIsDragging(false);
       }
     };
-    window.addEventListener('mouseup', handleMouseUp);
-    return () => window.removeEventListener('mouseup', handleMouseUp);
-  }, [isDragging, startDate, handleDateMouseUp]);
+    window.addEventListener('mouseup', handleGlobalMouseUp);
+    return () => window.removeEventListener('mouseup', handleGlobalMouseUp);
+  }, [isDragging]);
 
   const hasSelection = !!(startDate || endDate);
 

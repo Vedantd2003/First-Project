@@ -19,6 +19,7 @@ export interface DateRangeActions {
   clearSelection: () => void;
   setSelectionMode: (mode: SelectionMode) => void;
   setHoverDate: (date: Date | null) => void;
+  setIsDragging: (dragging: boolean) => void;
 }
 
 export const useDateRange = (): DateRangeState & DateRangeActions => {
@@ -105,5 +106,6 @@ export const useDateRange = (): DateRangeState & DateRangeActions => {
     clearSelection,
     setSelectionMode,
     setHoverDate,
+    setIsDragging,
   };
 };
