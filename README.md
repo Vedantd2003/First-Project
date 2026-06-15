@@ -1,5 +1,9 @@
 # First-Project
-This is my first repository
-<br>
-<h1>
-Author - Vedant Deshpande</h1>
+
+My first repository on GitHub — created while getting familiar with Git and GitHub basics (repos, commits, pushes).
+
+## What I Learned
+- Setting up a local Git repo and connecting it to a remote on GitHub
+- Basic Git workflow: add, commit, push
+
+**Author:** Vedant Deshpande
